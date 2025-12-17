@@ -86,7 +86,6 @@ body {
 }
 
 .cards-section {
-    background-color: blanchedalmond;
     flex: 1;
     width: 100%;
     display: flex;
@@ -110,4 +109,226 @@ body {
     flex-direction: column;
 }
 
-.card-header {}
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 45px;
+}
+
+.all-task {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #111;
+}
+
+.add-task-btn {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    gap: 6px;
+    border-radius: 6px;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #444;
+
+    cursor: pointer
+}
+
+.plus-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #99969662;
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.377);
+    border-radius: 50%;
+}
+
+.add-task-btn:hover {
+    background-color: rgba(0, 0, 0, 0.06);
+}
+
+.all-cards {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+#card-layout {
+    min-height: 170px;
+    height: auto;
+    width: 100%;
+    border-radius: 15px;
+    border: 3px dashed rgba(0, 0, 0, 0.35);
+    background-color: #BDE4E6;
+    padding: 15px;
+    box-shadow:
+        0 2px 6px rgba(0, 0, 0, 0.08),
+        0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+#card-layout:hover {
+    box-shadow:
+        0 4px 10px rgba(0, 0, 0, 0.12),
+        0 12px 28px rgba(0, 0, 0, 0.16);
+}
+
+
+.card-layoutFlex {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.task-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: -2px;
+}
+
+.task {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+    letter-spacing: 0.06em;
+    color: #111;
+    max-width: 100%;
+    word-break: break-word;
+    cursor: pointer;
+    flex: 1;
+    min-width: 0;
+}
+
+.time {
+    background: none;
+    border-radius: 15px;
+    width: 120px;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-color: rgba(0, 0, 0, 0.15);
+    flex-shrink: 0;
+    white-space: nowrap;
+
+    transition:
+        background-color 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.time:hover {
+    background-color: rgba(0, 0, 0, 0.06);
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+
+.date {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #504d4d;
+}
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.about {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+    max-width: 100%;
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+.progress-wrapper {
+    margin-top: 10px;
+}
+
+.progress-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.progress-title {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #111;
+}
+
+.menu-icon {
+    font-size: 1rem;
+}
+
+.progress-count {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.95rem;
+    color: #111;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 14px;
+    border-radius: 999px;
+    background-color: transparent;
+    border: 2px solid #e76b6b;
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+.progress-fill {
+    height: 100%;
+    width: 100%;
+    background-color: #2cff2c;
+    border-radius: 999px;
+
+    transition: width 0.3s ease;
+}
+
+#delete button,
+#delete {
+    background: none;
+    border: none;
+    padding: 6px;
+    border-radius: 8px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 13px;
+}
+
+#delete img {
+    width: 16px;
+    height: 16px;
+    display: block;
+}
+
+#delete:hover {
+    background-color: rgba(255, 0, 0, 0.08);
+}
+
+#delete:active {
+    background-color: rgba(255, 0, 0, 0.15);
+}
