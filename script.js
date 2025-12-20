@@ -12,10 +12,18 @@ const dateInput = document.querySelector('.form-date');
 
 function taskform() {
     let titleValue = titleInput.value;
-    let subTaskValue = subtaskDetails.value;
+    let subTaskValue = subtaskInput.value;
     let taskDetailsValue = taskDetails.value;
     let subTaskDetailsValue = subtaskDetails.value;
     let endDate = dateInput.value;
+}
+
+function resetValue() {
+    titleInput.value = "";
+    subtaskInput.value = "";
+    taskDetails.value = "";
+    subtaskDetails.value = "";
+    dateInput.value = "";
 }
 
 addNewTask.addEventListener('click', () => {
@@ -25,6 +33,7 @@ addNewTask.addEventListener('click', () => {
 
 })
 formClose.addEventListener('click', () => {
+    resetValue()
     formBackdrop.style.display = 'none';
     formContainer.style.display = 'none';
     console.log('working');
@@ -33,6 +42,7 @@ formSave.addEventListener('click', () => {
     taskform()
     formBackdrop.style.display = 'none';
     formContainer.style.display = 'none';
+    resetValue()
     console.log('working');
 
 })
