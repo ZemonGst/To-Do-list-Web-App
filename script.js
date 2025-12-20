@@ -10,12 +10,18 @@ const taskDetails = document.querySelector('.taskDetails');
 const subtaskDetails = document.querySelector('.subtaskDetails');
 const dateInput = document.querySelector('.form-date');
 
+const cardTask = document.querySelector('.task');
+const titleAbout = document.querySelector('.about');
+
 function taskform() {
     let titleValue = titleInput.value;
     let subTaskValue = subtaskInput.value;
     let taskDetailsValue = taskDetails.value;
     let subTaskDetailsValue = subtaskDetails.value;
     let endDate = dateInput.value;
+
+    cardTask.textContent = titleValue;
+    titleAbout.textContent = taskDetailsValue;
 }
 
 function resetValue() {
