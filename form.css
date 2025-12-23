@@ -125,6 +125,19 @@
     transition: 0.2s ease-in-out;
 }
 
+.subtask-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-btn {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
 #cancle img {
     width: 27px;
 }
