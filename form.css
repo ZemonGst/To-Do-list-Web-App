@@ -136,6 +136,7 @@
     font-size: 2rem;
     cursor: pointer;
     border-radius: 50%;
+    padding: 6px 6px;
 }
 
 #cancle img {

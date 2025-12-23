@@ -9,6 +9,7 @@ const subtaskInput = document.querySelector('.subtask-input');
 const taskDetails = document.querySelector('.taskDetails');
 const subtaskDetails = document.querySelector('.subtaskDetails');
 const dateInput = document.querySelector('.form-date');
+const addBtnSubtsk = document.querySelector('.add-btn');
 
 const cardTask = document.querySelector('.task');
 const titleAbout = document.querySelector('.about');
@@ -31,7 +32,6 @@ function resetValue() {
     subtaskDetails.value = "";
     dateInput.value = "";
 }
-
 addNewTask.addEventListener('click', () => {
     formBackdrop.style.display = 'block';
     formContainer.style.display = 'block';
@@ -51,5 +51,9 @@ formSave.addEventListener('click', () => {
     resetValue()
     console.log('working');
 
+})
+addBtnSubtsk.addEventListener('click', () => {
+
+    console.log('work');
 })
 
