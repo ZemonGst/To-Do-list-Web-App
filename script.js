@@ -53,7 +53,17 @@ formSave.addEventListener('click', () => {
 
 })
 addBtnSubtsk.addEventListener('click', () => {
+    // get ALL current subtask inputs
+    const allSubtasks = document.querySelectorAll('.subtask-input');
 
-    console.log('work');
-})
+
+    const lastSubtask = allSubtasks[allSubtasks.length - 1];
+
+    const newSubInput = lastSubtask.cloneNode(true);
+    newSubInput.value = '';
+    lastSubtask.parentNode.insertBefore(
+        newSubInput,
+        lastSubtask.nextSibling
+    );
+});
 
